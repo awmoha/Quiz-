@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Quiz By Mohammad Awad</title>
+  </head>
+  <body>
+    <section class="quiz_wrapper"></section>
+    <section class="quiz_screens">
+      <div class="quiz_mode">
+        <div>
+          <span>Dark Mode</span>
+          <div>
+            <input type="checkbox" class="checkbox" id="mode" />
+            <label class="label" for="mode">
+              <i class="fa fa-moon-o" aria-hidden="true"></i>
+              <i class="fa fa-sun-o" aria-hidden="true"></i>
+              <div class="circle"></div>
+            </label>
+          </div>
+          <span>Light Mode</span>
+        </div>
+      </div>
+      <div id="welcome" hidden>
+        <h3>Välkommen!</h3>
+        <p>Låt oss spela ett Quiz och testa dina kunskaper om random saker!</p>
+        <button id="start_button">START</button>
+      </div>
+      <div id="question_container" hidden>
+        <h3 id="question_title"></h3>
+        <div id="question_answer_options"></div>
+        <p id="question_error">You must select at least one option</p>
+        <button id="question_button_next">Next</button>
+        <button id="question_button_reset">Reset</button>
+      </div>
+      <div id="answers_container" hidden>
+        <h3>Your results</h3>
+        <h3 id="answers_score">Correct answers: 0/7</h3>
+        <div id="answers_content"></div>
+        <button id="answers_button_reset">Take the test again</button>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
