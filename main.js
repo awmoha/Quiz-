@@ -186,7 +186,7 @@ function showResults() {
 
 
 
-//alternativ 1 
+//alternativ 1 med siffror
 
   let scoreColor;
   if (score === 7 ) {
