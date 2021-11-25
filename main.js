@@ -184,9 +184,7 @@ function showResults() {
   });
   answersContent.innerHTML = resultsHtml;
 
-
-
-//alternativ 1 med siffror
+//alternativ 1 med siffror 
 
   let scoreColor;
   if (score === 7 ) {
@@ -282,7 +280,7 @@ nextButton.addEventListener("click", () => {
 
 showScreen(SCREEN_WELCOME);
 
-//Ändra mode
+//Ändra mode när man klicka på knappen 
 const mode = document.getElementById("mode");
 
 mode.addEventListener("click", () => {
