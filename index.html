@@ -10,8 +10,10 @@
     <title>Quiz By Mohammad Awad</title>
   </head>
   <body>
+    <!--section för bild-->
     <section class="quiz_wrapper"></section>
     <section class="quiz_screens">
+      <!--Dark och light Mode-->
       <div class="quiz_mode">
         <div>
           <span>Dark Mode</span>
@@ -26,17 +28,20 @@
           <span>Light Mode</span>
         </div>
       </div>
+      <!--Welcome skärm -->
+
       <div id="welcome" hidden>
         <h3>Välkommen!</h3>
         <p>Låt oss spela ett Quiz och testa dina kunskaper om random saker!</p>
         <button id="start_button">START</button>
       </div>
+
       <div id="question_container" hidden>
         <h3 id="question_title"></h3>
         <div id="question_answer_options"></div>
         <p id="question_error">You must select at least one option</p>
-        <button id="question_button_next">Next</button>
         <button id="question_button_reset">Reset</button>
+        <button id="question_button_next">Next</button>
       </div>
       <div id="answers_container" hidden>
         <h3>Your results</h3>
